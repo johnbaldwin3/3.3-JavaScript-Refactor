@@ -253,6 +253,27 @@ var decreaseScore = function() {
 
 // Put your answer below -------------------------
 
+/*
+*  Yo, check it, this is the function security rap,
+*  so when you try to get my variables,
+*  angry pixies will give your mischevious hand a slap!
+*/
+//aka - immediately invoke (so that it doesn't interfere) anonymous function expression to keep everything inside of it local in scope.
+//aka - don't let hacker Dan attack my game...
+
+(function(){
+
+  var score = 0;
+
+  var increaseScore = function() {
+    score++;
+  };
+
+  var decreaseScore = function() {
+    score--;
+  };
+
+}());
 
 // -----------------------------------------------
 
