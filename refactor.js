@@ -211,19 +211,34 @@ var callTenTimes = function(callback) {
 
 var callNTimes = function(callback, n) {
 
-  /*creates an array of integers for each to be called on (9) in this case
-    [0, 1, 2 ... 7, 8];
+  /*creates an array of integers for each to be called on so if (9) in this case
+    it would return [0, 1, 2 ... 7, 8];
   */
   var range = _.range(n);
-// _.each loops through each item in array (in this case range), and iterates the // call back each time (n times)
+// _.each loops through each item in array (in this case range), and iterates the // call back each time (n amount of times)
   _.each(range, callback);
 }
 //set up function to test if working
+
 // var myFunction = function() {
 //   console.log(5);
 // };
 // ----- test via console.log --------
 //console.log(callNTimes(myFunction, 3));
+
+//---------------------------new #7-----------------------
+//var callTenTimes = function(callback) {
+//	for(var i = 0; i < 10; i++){
+//		callback();
+//	}
+//};
+//--------------------new answer-----------------
+//    var callNTimes = function(callback, num) {
+
+//      for(var i = 0; i < num); i++){
+//        callback();
+//      }
+//    }
 
 
 // -----------------------------------------------
@@ -389,6 +404,24 @@ var callLater = function(timeout, callback) {
 };
 
 // Put your answer below -------------------------
+
+
+var callLater = function(timeout, callback) {
+      // if only function set, add 5000 as default time
+  if (typeof timeout == 'function') {
+        callback = timeout;
+        timeout = 1000;
+     };
+ setTimeout(callback, timeout);
+};
+
+
+
+function parlimentFunct() {
+  console.log("wowser");
+}
+
+callLater(parlimentFunct);
 
 
 // -----------------------------------------------
