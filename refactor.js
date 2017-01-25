@@ -184,7 +184,7 @@ var foo = "bar";
 
 //variable declartion line 1:
 var foo;
-//variable assignment line 2: 
+//variable assignment line 2:
 foo = 'bar';
 
 // -----------------------------------------------
@@ -207,6 +207,23 @@ var callTenTimes = function(callback) {
 };
 
 // Put your answer below -------------------------
+
+
+var callNTimes = function(callback, n) {
+
+  /*creates an array of integers for each to be called on (9) in this case
+    [0, 1, 2 ... 7, 8];
+  */
+  var range = _.range(n);
+// _.each loops through each item in array (in this case range), and iterates the // call back each time (n times)
+  _.each(range, callback);
+}
+//set up function to test if working
+// var myFunction = function() {
+//   console.log(5);
+// };
+// ----- test via console.log --------
+//console.log(callNTimes(myFunction, 3));
 
 
 // -----------------------------------------------
