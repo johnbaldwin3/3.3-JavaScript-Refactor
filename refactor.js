@@ -294,6 +294,12 @@ var twoPlusTwo = addNumbers(2,2);
 
 // Put your answer below -------------------------
 
+//did not return a value in example.. needed to return something to put into mug
+var addNumbers = function(numberA, numberB) {
+  return (numberA + numberB);
+};
+//now twoPlusTwo = 4 !! 
+var twoPlusTwo = addNumbers(2,2);
 
 // -----------------------------------------------
 
