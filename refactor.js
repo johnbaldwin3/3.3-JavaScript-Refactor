@@ -165,7 +165,7 @@ var spanishColors = function(colorsName) {
 
 }
 //log to test if correct
-console.log(spanishColors('Rojo'));
+//console.log(spanishColors('Rojo'));
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -182,6 +182,10 @@ var foo = "bar";
 
 // Put your answer below -------------------------
 
+//variable declartion line 1:
+var foo;
+//variable assignment line 2: 
+foo = 'bar';
 
 // -----------------------------------------------
 
