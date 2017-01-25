@@ -52,6 +52,8 @@ setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
 
+//set the anonymous function expression in the setTimeout method
+setTimeout(function(){ alert("Hello, World!!")}, 2000);
 
 // -----------------------------------------------
 
@@ -82,6 +84,9 @@ console.log("The letter is", letter);
 
 // Put your answer below -------------------------
 
+/*************************
+ The JS runs down through the code and capture the declaration of the variable then reads the setTimeout anonymous function, and says cool, theres a function there (but it's not immediately invoked), and moves on very quickly down and sees that letter has been redefined/assigned to = 'z' and runs the immediately following console.log to print "the letter is z", it then goes back to the function in setTimeout and runs it and prints "the letter is y" (it prints y, because the local scope of the variable takes precedence over the variable declaration and assignment to X in the global scope)
+ **************************/
 
 // -----------------------------------------------
 
