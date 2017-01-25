@@ -146,7 +146,26 @@ var spanishColor = function(colorName) {
 
 // Put your answer below -------------------------
 
+var spanishColors = function(colorsName) {
+  // puts answer to lowercase on chance of input having capital letters
+  colorsNamed = colorsName.toLowerCase();
 
+  //  creating object colorSpan that holds spanish propertys and values
+  var colorSpan = {
+
+    rojo: "#ff0000",
+    blanco: "#ffffff",
+    azul: "#0000ff",
+    verde: "#00ff00",
+    negro: "#000000"
+
+  }
+//return the color value of the property defined by the user's input
+  return colorSpan[colorsNamed];
+
+}
+//log to test if correct
+console.log(spanishColors('Rojo'));
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
