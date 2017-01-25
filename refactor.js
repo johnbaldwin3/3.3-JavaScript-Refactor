@@ -298,7 +298,7 @@ var twoPlusTwo = addNumbers(2,2);
 var addNumbers = function(numberA, numberB) {
   return (numberA + numberB);
 };
-//now twoPlusTwo = 4 !! 
+//now twoPlusTwo = 4 !!
 var twoPlusTwo = addNumbers(2,2);
 
 // -----------------------------------------------
@@ -325,8 +325,29 @@ var accelerate = function(amount) {
 };
 
 // Put your answer below -------------------------
+/*
+//accelerate();
+//console.log(speed);
+ When not passing argument to amount... the accelerate function is trying to figure out how to add speed (0) to the amount variable which has not been assigned/defined... therefore it does not mesh and spits out NaN since it felt like we should have been expecting a number.
+*/
 
-
+var speed = 0;
+var accelerated = function(amount){
+  //if amount hasn't been provided ---
+  if (amount == undefined) {
+    //set amount = to 1
+    amount = 1;
+    // proceed to add speed to amount as normal...
+    speed += amount;
+  } else {
+    //otherwise, if amount was defined...
+    // add amount to speed and *vroooom* *vrrooom* Go SpeedRacer!
+    speed += amount;
+  }
+}
+//tested with adding amount and without amount... worked!
+//accelerated();
+//console.log(speed);
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
