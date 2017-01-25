@@ -109,6 +109,9 @@ var reverseStr = function(str) {
 
 // Put your answer below -------------------------
 
+//chain the methods together... should have done this yesterday HA!
+function reverseStr(str) { str.split("").reverse().join(""); return str; }
+// testing --> console.log(reverseStr("I like food"));
 
 // -----------------------------------------------
 
