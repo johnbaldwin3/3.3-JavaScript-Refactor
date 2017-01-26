@@ -85,7 +85,7 @@ console.log("The letter is", letter);
 // Put your answer below -------------------------
 
 /*************************
- The JS runs down through the code and capture the declaration of the variable then reads the setTimeout anonymous function, and says cool, theres a function there (but it's not immediately invoked), and moves on very quickly down and sees that letter has been redefined/assigned to = 'z' and runs the immediately following console.log to print "the letter is z", it then goes back to the function in setTimeout and runs it and prints "the letter is y" (it prints y, because the local scope of the variable takes precedence over the variable declaration and assignment to X in the global scope)
+ The JS runs down through the code on first pass and sees variable declarations andm function declarations. Next pass it goes and captures the declaration of the variable to x and continues, then reads the setTimeout anonymous function, and says cool, theres a function there (but it's not immediately invoked), in fact it's delayed and stores it aside for 1ms, and moves on very quickly down and sees that letter has been redefined/assigned to = 'z' and runs the immediately following console.log to print "the letter is z", it then goes back to the function in setTimeout and runs it and prints "the letter is y" (it prints y, because it was re-assigned inside of the function, overwriting z from previous assignment in the global scope of things)
  **************************/
 
 // -----------------------------------------------
